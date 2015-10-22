@@ -1,8 +1,14 @@
 __author__ = 'amirbar'
 
 import os
-from Tkinter import *
 import random
+import sys
+
+# Load correct package for python 3.0 or higher
+if sys.version_info > (3, 0):
+    from tkinter import *
+else:
+    from Tkinter import *
 
 ROUNDS_PER_GAME = 20
 CHOICES_NUM = 4
